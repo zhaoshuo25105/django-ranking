@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <td>排名</td>
+            <td>客户端</td>
+            <td>分数</td>
+
+        </tr>
+
+        {% for i in obj %}
+
+            <tr>
+                <td>{{ i.ranking}}</td>
+                <td>{{ i.score.name }}</td>
+                <td>{{ i.score.get_score }}</td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td>{{ score_rank.ranking }}</td>
+            <td>{{ score.name }}</td>
+            <td>{{ score.get_score }}</td>
+        </tr>
+
+    </table>
+
+
+
+</body>
+
+</html>

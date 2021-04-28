@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="/score/03-tmp/" method="post">
+        {% csrf_token %}
+        <p>上传玩家号：
+            <input type="text" name="uname" placeholder="玩家姓名">
+        </p>
+        <p>上传分数：
+            <input type="text" name="uscore" placeholder="分数范围为１～１０００００００">
+        </p>
+
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
+
